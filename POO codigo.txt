@@ -1,0 +1,58 @@
+java import java.util.Scanner;
+
+public class Perritos {
+
+
+    public static void main(String[] args) {
+        cuantosPaquetes();
+
+    }
+
+    public static void cuantosPaquetes(){
+EJERCICIO POO
+
+
+
+        String nombrePerro;
+        Scanner scanner;
+        scanner = new Scanner(System.in);
+
+        int cantidadComida = 0;
+        double contadorComida = 0;
+        int contadorPaquete = 0;
+
+
+
+        System.out.println("Ingrese el nombre del perri:");
+        nombrePerro = scanner.nextLine();
+
+       while (cantidadComida<=3){
+           System.out.println("Ingrese la cantidad de Kilos de comida:");
+
+           cantidadComida= scanner.nextInt();
+
+           if(cantidadComida<=3){
+               System.out.print("No seas rata, te va a ladrar toda la noche. Ingresá más de 3.");
+           }
+
+       }
+
+        System.out.format("ok, entonces "+ nombrePerro+ " va a lastrar " + cantidadComida + "Kg de comida." );
+
+
+        while (contadorComida < cantidadComida){
+
+            System.out.print("Ahora ingresá los kilos del paquete");
+
+            contadorComida += scanner.nextDouble();
+            contadorPaquete++;
+
+        };
+
+        System.out.println(nombrePerro + "precisa: " + contadorPaquete + " paquetes");
+
+    }
+
+
+
+}
